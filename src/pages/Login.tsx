@@ -30,7 +30,6 @@ function Login() {
       }
     });
   }
-
   return (
     <div>
       {loading && (<Loading />)}
