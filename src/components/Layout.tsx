@@ -1,14 +1,12 @@
-import Album from '../pages/Album';
-import Login from '../pages/Login';
-import Search from '../pages/Search';
+import { Outlet } from 'react-router-dom';
+import Header from './Header';
 
 function Layout() {
   return (
-    <>
-      <Login />
-      <Album />
-      <Search />
-    </>
+    <div>
+      <Header />
+      <Outlet />
+    </div>
   );
 }
 export default Layout;
